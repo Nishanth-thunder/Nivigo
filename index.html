@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<HTML LANG = "en">
+<HEAD>
+<META CHARSET = "UTF-8">
+<TITLE>NIVIGO </TITLE>
+</head>
+<body>
+    <center>
+        <div style="background-color:LightSkyBlue">
+        <P style="font-family: impact;font-size: 40px;color: red">NIVIGO</P>
+
+        <P><B>
+            HELLO - नमस्ते - வணக்கம்
+            Welcome to NIVIGO - NIVIGO आपका स्वागत है
+        </B></P>
+            <p><B>Nivigo is a weather forecasting application which is targeted for rural peoples and farmers<BR>
+            Its user friendly design and fast response can hold its position in the market.More to come...stay tuned!</BR>
+            </B></p>
+        <div>
+        <form class="pure-form" method="POST" action="/">
+            <label>Location: </label>
+            <input type="text" name="place">
+            <br>
+            <label>Date: </label>
+            <input type="date" placeholder="yyyy-mm-dd" name="date">
+            </br>
+            <label>Time: </label>
+            <input type="Time"  name="time">
+            <button type="submit" class="pure-button">SUBMIT</button>
+        </form>
+        </div>
+        <div>
+            {% if p %}
+                <p>Place: {{ p }}</p>
+                <p><B><li>Weather : {{ n }}</li></B> </p>
+            {% endif %}
+        </div>
+            <img src="https://wallpapercave.com/wp/wp1886332.jpg" width="1000" height="500">
+</HEAD>
+        </div>
+    </center>
+</body>
+</HTML>
